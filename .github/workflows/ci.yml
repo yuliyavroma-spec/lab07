@@ -16,7 +16,8 @@ jobs:
         submodules: recursive
 
     - name: Configure CMake
-      run: cmake -B build -DBUILD_TESTS=ON
+      run: cmake -B build 
+  -DBUILD_TESTS=ON
  - name: Build
       run: cmake --build build
 
