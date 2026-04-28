@@ -17,3 +17,6 @@ add_subdirectory(solver_lib)
 add_subdirectory(solver)
 
 include(CPackConfig.cmake)
+
+set(HUNTER_USE_LOCAL_PACKAGES TRUE)
+set(HUNTER_LOCAL_PACKAGES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pkg)
